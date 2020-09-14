@@ -2,8 +2,8 @@
     <form class="form newsletter-subscription-form">
         <div class="payment-option-inner">
             <input type="checkbox"
-                   data-bind="attr: { 'id': getCheckboxId($element), 'name': getCheckboxName($element) }"/>
-            <label data-bind="attr: {'for': getCheckboxId($element)}">
+                   data-bind="attr: { 'id': 'newsletter-subscription-checkbox', 'name': 'newsletter-subscription-checkbox' }"/>
+            <label data-bind="attr: {'for': 'newsletter-subscription-checkbox' }">
                 <span data-bind="i18n: 'Yes, I would like to receive regular news and offers.'"></span>
             </label>
         </div>

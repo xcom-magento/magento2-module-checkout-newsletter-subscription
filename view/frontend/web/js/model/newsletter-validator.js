@@ -12,13 +12,10 @@ define(
         'use strict';
 
         function getNewsletterSubscribtionStatus() {
-            var contexts = document.querySelectorAll('#checkout-payment-method-load [type=radio]');
-            var i;
-            for (i = 0; i < contexts.length; i++) {
-                var checkbox = document.querySelector('#newsletter_' + contexts[i].id);
-                if (checkbox && checkbox.checked) {
-                    return true;
-                }
+
+            var checkbox = document.querySelector(' form .newsletter-subscription-form #newsletter-subscription-checkbox');
+            if (checkbox && checkbox.checked) {
+                return true;
             }
             return false;
         }
